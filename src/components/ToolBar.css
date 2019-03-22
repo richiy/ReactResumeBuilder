@@ -1,0 +1,79 @@
+.wrapper {
+  display: relative;
+}
+
+.tool-bar {
+  background-color: #f8dd74;
+  padding: 10px;
+  border-radius: 10px;
+  width: max-content;
+  position: relative;
+  transition: background-color 1s;
+  transition: box-shadow 1s;
+  margin: 7px;
+}
+
+.tool-bar:hover {
+  background-color: #ffe788;
+  cursor: pointer
+}
+
+.tool-bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.pdf-svg-layer1 {
+  enable-background: new 0 0 512 512;
+  /*xml:space="preserve"*/
+  width: 50px;
+  height: 50px;
+}
+
+.pdf-svg-layer1:hover {
+  cursor: pointer;
+}
+
+.tool-bar svg {
+  position: relative;
+  display: inline;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow 1s;
+}
+
+.tool-bar svg:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.pdf-svg-layer2 {
+  fill: rgb(243, 243, 243);
+}
+
+.pdf-svg-layer3 {
+  fill: #fff;
+}
+
+.pdf-svg-layer4 {
+  fill: #CAD1D8;
+}
+
+.pdf-svg-layer5 {
+  fill: rgb(252, 29, 0);
+}
+
+.pdf-svg-layer6 {
+  fill: #FFFFFF;
+}
+
+.pdf-svg-layer7 {
+  fill: #FFFFFF;
+}
+
+.pdf-svg-layer8 {
+  fill: #FFFFFF;
+}
+
+.pdf-svg-layer9 {
+  fill: blue;
+}

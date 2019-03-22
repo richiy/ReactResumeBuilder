@@ -1,0 +1,100 @@
+@media screen and (max-width: 810px) {
+  /* @media print {
+    .remove {
+      display: none !important;
+    }
+    a:link:after,
+    a:visited:after {
+      content: " (" attr(href) ")" !important;
+      font-size: 90%;
+      color: blue;
+    }
+  } */
+  .document {
+    grid-template-areas: "header" "body" "sub-body";
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  a:link:after,
+  a:visited:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: blue;
+  }
+  a {
+    color: black;
+  }
+  .grid-area-right-column {
+    grid-area: sub-body;
+  }
+  /* JOB COMPONENT aka EditableInfoCardList*/
+  .job-component {
+    grid-area: body;
+  }
+  .job-component form {
+    top: -50px;
+    left: 0;
+    width: 100%;
+  }
+  .job-component form button {
+    box-shadow: unset;
+    width: 100%;
+  }
+  .job-component ul li button {
+    top: 100%;
+    left: 0;
+  }
+  .job-component ul {
+    margin: 0;
+  }
+  /* END JOB COMPONENT */
+  /**************************************************************************/
+  /* SKILLS COMPONENT START aka EditableList*/
+  .skills-component form {
+    position: absolute;
+    left: 0;
+  }
+  .skills-component form input {
+    width: 150px;
+    display: block;
+  }
+  .skills-component form button {
+    width: 154px;
+    display: block;
+  }
+  /* END SKILLS COMPONENT  */
+  /**************************************************************************/
+  /*  EDUCATION COMPONENT aka EditableToggleCard*/
+  .education-component button {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    height: 50px;
+    background-color: rgb(238, 0, 0);
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    transition: background-color 0.5s;
+    outline: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    display: none;
+  }
+  /*  END EDUCATION COMPONENT*/
+  /**************************************************************************/
+  /* TEXT LINK COMPONENT START */
+  .text-links-component textarea {
+    display: block;
+  }
+  .text-links-component form {
+    left: 0;
+  }
+  .text-links-component form input {
+    display: block;
+  }
+  .text-links-component form button {
+    display: block;
+  }
+  /* END TEXT LINK COMPONENT  */
+}

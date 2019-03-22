@@ -1,0 +1,151 @@
+/* JOB COMPONENT aka EditableInfoCardList*/
+
+.job-component {
+  grid-area: left;
+  transition: box-shadow 1s;
+  position: relative;
+}
+
+.job-component ul li div input[name="date"] {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #659399;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: 200;
+  vertical-align: top;
+  height: 30px;
+  display: inline-block;
+  overflow: block;
+  text-transform: uppercase;
+}
+
+.job-component ul li div input[name="title"] {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: bolder;
+  vertical-align: top;
+  height: 30px;
+  display: inline-block;
+  overflow: block;
+}
+
+.job-component ul li div input[name="sub-title"] {
+  border: none;
+  outline: none;
+  font-size: 17px;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: 200;
+  vertical-align: top;
+  height: 30px;
+  display: inline-block;
+  overflow: block;
+  font-style: italic;
+}
+
+.job-component ul li div>textarea {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: 200;
+  height: 100px;
+  color: black;
+}
+
+.job-component>textarea {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: 700;
+  vertical-align: top;
+  padding: 0;
+  height: 35px;
+}
+
+.job-component:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  position: relative;
+}
+
+.job-component form {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+}
+
+.job-component form button {
+  height: 50px;
+  width: 60px;
+  position: absolute;
+  background-color: limegreen;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  transition: background-color 0.5s;
+  outline: none;
+  display: none;
+  transition: box-shadow 1s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.job-component:hover form button {
+  display: block;
+}
+
+.job-component form button:hover {
+  cursor: pointer;
+  background-color: rgb(25, 221, 25);
+}
+
+.job-component ul {
+  padding: 0;
+  list-style: none;
+}
+
+.job-component ul li {
+  position: relative;
+}
+
+.job-component ul li:hover button {
+  display: block;
+  z-index: 1;
+}
+
+.job-component ul li button {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 50px;
+  background-color: rgb(238, 0, 0);
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  transition: background-color 0.5s;
+  outline: none;
+}
+
+.job-component ul li button:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+/* END JOB COMPONENT */

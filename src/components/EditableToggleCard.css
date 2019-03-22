@@ -1,0 +1,80 @@
+/*  EDUCATION COMPONENT aka EditableToggleCard*/
+
+.education-component {
+  position: relative;
+  transition: box-shadow 1s;
+}
+
+.education-component input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: bolder;
+  vertical-align: top;
+  height: 30px;
+  display: inline-block;
+  overflow: block;
+}
+
+.education-component input[name="date"] {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #659399;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: 200;
+  vertical-align: top;
+  height: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.education-component:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.education-component button {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  height: 50px;
+  background-color: rgb(238, 0, 0);
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  transition: background-color 0.5s;
+  outline: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: none;
+}
+
+.education-component button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.education-component:hover button {
+  display: block;
+}
+
+.education-component textarea {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  overflow-y: hidden;
+  display: block;
+  padding: 0;
+}
+
+/*  END EDUCATION COMPONENT*/

@@ -1,0 +1,115 @@
+/* HEADER COMPONENT AKA profile info */
+
+.header h1 {
+  font-size: 4em;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 1em;
+  padding: 0;
+  margin: 0;
+  transition: box-shadow 1s;
+}
+
+.header div input[type="file"] {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.header:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header div:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header div {
+  position: relative;
+  transition: box-shadow 1s;
+}
+
+.header div img {
+  width: 100%;
+  height: auto;
+}
+
+.header header textarea {
+  border: none;
+  outline: none;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: 700;
+  vertical-align: top;
+  height: 70px;
+  overflow: hidden;
+  font-size: 45px;
+}
+
+.header header input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: bolder;
+  vertical-align: top;
+  height: 30px;
+  display: inline-block;
+  overflow: block;
+}
+
+.header header input[name="description"] {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 99.9%;
+  resize: none;
+  box-sizing: border-box;
+  font-weight: bolder;
+  color: purple;
+  vertical-align: top;
+  height: 30px;
+  display: inline-block;
+  overflow: block;
+}
+
+.header div svg {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: -10px;
+  left: 165px;
+  display: none;
+}
+
+.header div:hover svg {
+  display: block;
+}
+
+.header ellipse {
+  fill: #71c386;
+  stroke-width: 5px;
+}
+
+.header svg ellipse, path {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.header path {
+  fill: #fff;
+  stroke-width: 4px;
+}
+
+/* END HEADER COMPONENT*/
